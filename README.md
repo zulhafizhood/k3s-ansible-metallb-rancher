@@ -145,7 +145,7 @@ helm install rancher rancher-stable/rancher \
   --set ingress.tls.source=secret  
   
 <pre>
-cat <<EOF > svc.yml  
+cat \<\<EOF > svc.yml  
 apiVersion: v1  
 kind: Service  
 metadata:  
@@ -162,6 +162,7 @@ spec:
       targetPort: 443  
   type: LoadBalancer  
 EOF  
-<pre />
+<pre />  
+  
 kubectl apply -f svc.yml --namespace=cattle-system  
   
