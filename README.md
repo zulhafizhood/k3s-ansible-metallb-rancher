@@ -145,7 +145,7 @@ helm install rancher rancher-stable/rancher \
   --set ingress.tls.source=secret  
   
 <pre>
-cat \<\<EOF > svc.yml  
+cat &lt;&lt;EOF > svc.yml  
 apiVersion: v1  
 kind: Service  
 metadata:  
